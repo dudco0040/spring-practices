@@ -8,8 +8,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="<%=request.getContextPath() %>/delete/<%=no %>">
-		<input type='hidden' name="no" value="<%=no %>">
+	<form method="post" action="<%=request.getContextPath() %>/delete/${no}">
 		<table>
 			<tr>
 				<td>비밀번호</td>
