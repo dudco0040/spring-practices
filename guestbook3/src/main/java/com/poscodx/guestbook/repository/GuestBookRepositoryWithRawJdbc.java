@@ -15,11 +15,13 @@ import com.poscodx.guestbook.vo.GuestBookVo;
 
 @Repository
 public class GuestBookRepositoryWithRawJdbc {
+	// DataSource
 	private DataSource dataSource;
 	
 	public GuestBookRepositoryWithRawJdbc(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
+	
 	
 	public int deleteByNoAndPassword(Long no, String password) {
 		int result = 0;
