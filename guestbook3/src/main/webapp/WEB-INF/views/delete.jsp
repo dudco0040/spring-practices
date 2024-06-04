@@ -8,7 +8,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="<%=request.getContextPath() %>/gb?a=delete">
+	<form method="post" action="<%=request.getContextPath() %>/delete/<%=no %>">
 		<input type='hidden' name="no" value="<%=no %>">
 		<table>
 			<tr>
@@ -18,6 +18,6 @@
 			</tr>
 		</table>
 	</form>
-	<br><td><a href="<%=request.getContextPath() %>/gb">메인으로 돌아가기</a></td>
+	<br><td><a href="<%=request.getContextPath() %>">메인으로 돌아가기</a></td>
 </body>
 </html>

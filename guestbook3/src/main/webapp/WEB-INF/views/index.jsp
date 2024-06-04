@@ -11,7 +11,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="<%=request.getContextPath() %>/gb?a=add" method="post">
+	<form action="<%=request.getContextPath() %>/add" method="post">
 	
 		<table border=1 width=500>
 			<tr>
@@ -19,7 +19,7 @@
 				<td>비밀번호</td><td><input type="password" name="password" value="" ></td>
 			</tr>
 			<tr>
-				<td colspan=4><textarea name="message" cols=60 rows=5></textarea></td>
+				<td colspan=4><textarea name="contents" cols=60 rows=5></textarea></td>
 			</tr>
 			<tr>
 				<td colspan=4 align=right><input type="submit" VALUE=" 확인 "></td>
@@ -37,7 +37,7 @@
 			<td><%=count-- %></td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
-			<td><a href="<%=request.getContextPath() %>/gb?a=deleteform&no=<%=vo.getNo() %>">삭제</a></td>
+			<td><a href="<%=request.getContextPath() %>/delete/<%=vo.getNo() %>">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><pre style="white-space: pre-wrap;"><%=vo.getContents() %></td>
