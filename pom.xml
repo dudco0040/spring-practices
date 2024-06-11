@@ -10,5 +10,6 @@
   	<module>guestbook3</module>
   	<module>guestbook</module>
   	<module>aoptest</module>
+  	<module>fileupload</module>
   </modules>
 </project>
